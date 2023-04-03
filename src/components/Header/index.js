@@ -1,10 +1,10 @@
 import Nav from './Nav.js';
 
-function Header() {
+function Header({ currentPage, handlePageChange }) {
     return (
         <header>
         <h1>James Portfolio</h1>
-        <Nav />
+        <Nav currentPage={currentPage} handlePageChange={handlePageChange}/>
         </header>
     );
 }
