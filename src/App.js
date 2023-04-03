@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
 import './App.css';
 
-import Main from './components/Main.js';
-import Nav from './components/Nav.js';
+import Home from './components/Home.js';
+import Header from './components/Header';
+import Nav from './components/Header/Nav.js'
+import Footer from './components/Footer';
+import About from './components/About.js';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact.js';
+// import Resume from './components/resume.js';
+
 
 function App() {
+
+
   const [pages] = useState([
     {
       name: 'about'
@@ -20,14 +29,37 @@ function App() {
     }
   ]);
 
+  const renderPage = () => {
+    if (currentPage === 'About') {
+      return <About />;
+    }
+    if (currentPage === 'Portfolio') {
+      return <Portfolio />;
+    }
+    if (currentPage === 'Contact') {
+      return <Contact />;
+    }
+    // return <Resume />;
+  };
+
 const [currentPage, setCurrentPage] = useState(pages[0]);
+
+const handlePageChange = (page) => setCurrentPage(page);
+  
+
   return (
-    <Nav
-    pages={pages}
-    setCurrentPage={currentPage}
-    currentPage={currentPage}
-    />
-      <Main />
+    <div>
+    <Nav currentPage={currentPage} handlePageChange={handlePageChange}/>
+      <main>
+        {/* <Home 
+          pages={pages}
+          handlePageChange={currentPage}
+          currentPage={currentPage}/> */}
+
+      {renderPage()}
+      </main>
+      <Footer />
+      </div>
   );
 }
 
