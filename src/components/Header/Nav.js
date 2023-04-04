@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 
 
 function Nav({ currentPage, handlePageChange }) {
@@ -19,6 +18,9 @@ function Nav({ currentPage, handlePageChange }) {
             <li>
                 <a href="#contact" onClick={() => handlePageChange('Contact')}>Contact</a>
             </li>
+            {/* <li>
+                <a href="#resume" onClick={() => handlePageChange('Resume')}>Resume</a>
+            </li> */}
             </ul>
       
     );
