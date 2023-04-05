@@ -1,13 +1,224 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(57, 47, 199);
+  background-color: azure;
 }
+
+h2 {
+  width: 100%;
+  color: black;
+}
+
+/*Header/Nav styling*/
+
+header {
+  background-color: rgb(57, 47, 199);
+  color: antiquewhite;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 35px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: antiquewhite;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+/*End header styling*/
+
+
+/*About section styling*/
+
+.about-section {
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 100px;
+  
+}
+
+.about-section h2 {
+  font-size: 30px;
+  border-bottom: 2px solid  rgb(57, 47, 199);
+  width: fit-content;
+  margin: 50px 15px;
+}
+
+.avatar img{
+  display: flex;
+  flex-wrap: wrap;
+  width: 185px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.about-section p {
+  width: 400px;
+  text-align: center;
+  margin: 50px 50px;
+}
+
+/*End about section styling*/
+
+
+/*Project section styling*/
+
+.project-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-section h2 {
+  font-size: 30px;
+  border-bottom: 2px solid  rgb(57, 47, 199);
+  width: fit-content;
+  margin: 25px 15px;
+}
+
+/*Featured project styling*/
+
+.featured-project {
+  width: 450px;
+  height: 295px;
+  margin: 15px 290px;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.featured-project h3 {
+  color:antiquewhite;
+  background-color: rgb(57, 47, 199);
+  position: absolute;
+  border-radius: 4px;
+}
+
+.featured-project img {
+  width: 100%;
+  height: 100%;
+}
+
+/*End featured project styling*/
+
+
+/*small project styling*/
+
+.small-projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project {
+  height: 190px;
+  width: 185px;
+  margin: 10px 20px;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.project h3 {
+  color:antiquewhite;
+  background-color: rgb(57, 47, 199);
+  position: absolute;
+  border-radius: 4px;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+}
+
+/*End small project styling and entire project section*/
+
+
+/*footer styling*/
+
+footer {
+  background-color: rgb(57, 47, 199);
+  color: antiquewhite;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 35px;
+}
+
+footer h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+footer ul li a {
+  padding: 10px 15px;
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+/*end footer styling*/
+
+
+/*Media Queries*/
+
+@media screen and (max-width: 390px) {
+  .featured-project {
+      margin: 15px 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .featured-project {
+      margin: 15px 160px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .small-projects {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 40px;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+}
+
+/*end media queries*/

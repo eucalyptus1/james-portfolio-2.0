@@ -6,6 +6,38 @@ import plant from "../../assets/images/plant.jpg";
 import trust from "../../assets/images/trust.jpg";
 import thing from "../../assets/images/untitled.png";
 
+const styles = {
+  projectContainer: {
+    display: "flex",
+    flexWrap: "wrap",
+    margin: "50px",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+
+  projectStyles: {
+    height: "190px",
+    width: "185px",
+    margin: "10px 20px",
+    borderStyle: "solid",
+    borderWidth: "4px",
+    borderRadius: "10px",
+    overflow: "hidden",
+  },
+
+  projectTitle: {
+    color: "antiquewhite",
+    backgroundColor: "rgb(57, 47, 199)",
+    position: "absolute",
+    borderRadius: "4px",
+  },
+
+  projectImage: {
+    width: "100%",
+    height: "100%",
+  },
+};
+
 function Project() {
   const projects = [
     {
@@ -73,12 +105,12 @@ function Project() {
   // const handleProject = (project) => setCurrentProject(project);
 
   return (
-    <div>
+    <div style={styles.projectContainer}>
       {projects.map((project) => (
-        <div key={project.id}>
-          <h3>{project.name}</h3>
+        <div style={styles.projectStyles} key={project.id}>
+          <h3 style={styles.projectTitle}>{project.name}</h3>
           <a href={project.link}>
-            <img src={project.image} alt="things" />
+            <img src={project.image} style={styles.projectImage} alt="things" />
           </a>
         </div>
       ))}
