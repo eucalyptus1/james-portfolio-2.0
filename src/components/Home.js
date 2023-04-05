@@ -1,58 +1,52 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import Header from './Header';
-import Footer from './Footer';
-import About from './About.js';
-import Portfolio from './Portfolio';
-import Contact from './Contact.js';
+import Header from "./Header";
+import Footer from "./Footer";
+import About from "./About.js";
+import Portfolio from "./Portfolio";
+import Contact from "./Contact.js";
 // import Resume from './components/resume.js';
 
-
 function Home() {
-
-
   const [pages] = useState([
     {
-      name: 'about'
+      name: "about",
     },
     {
-      name: 'portfolio'
+      name: "portfolio",
     },
     {
-      name: 'contact'
+      name: "contact",
     },
     {
-      name: 'resume'
-    }
+      name: "resume",
+    },
   ]);
 
   const renderPage = () => {
-    if (currentPage === 'About') {
+    if (currentPage === "About") {
       return <About />;
     }
-    if (currentPage === 'Portfolio') {
+    if (currentPage === "Portfolio") {
       return <Portfolio />;
     }
-    if (currentPage === 'Contact') {
+    if (currentPage === "Contact") {
       return <Contact />;
     }
     // return <Resume />;
   };
 
-const [currentPage, setCurrentPage] = useState(pages[0]);
+  const [currentPage, setCurrentPage] = useState("About");
 
-const handlePageChange = (page) => setCurrentPage(page);
-  
+  const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div>
-    <Header currentPage={currentPage} handlePageChange={handlePageChange}/>
-      <main>
-      {renderPage()}
-      </main>
+      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+      <main>{renderPage()}</main>
 
       <Footer />
-      </div>
+    </div>
   );
 }
 
