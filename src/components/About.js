@@ -39,19 +39,13 @@ function About() {
       <img src={avatar} style={styles.avatarStyles} alt="stuff" />
       <div>
         <p style={styles.aboutParagraph}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-          fermentum mi nec augue eleifend posuere. Fusce vitae pulvinar lectus,
-          a laoreet purus. Nullam eleifend metus ac diam pretium varius.
-          Phasellus luctus nunc non fermentum consequat. Etiam facilisis nunc in
-          mi tincidunt mattis. Pellentesque nec lacinia ex. Nullam et ex
-          egestas, porttitor massa eu, cursus erat. Integer sodales, erat at
-          tempus lobortis, tellus mauris pretium neque, sit amet convallis nisl
-          nulla a nibh. Suspendisse vulputate, mi sagittis varius finibus, erat
-          lorem efficitur lorem, et condimentum diam lectus at metus. Donec ac
-          sagittis turpis. Curabitur eu turpis sed justo hendrerit ullamcorper.
-          Suspendisse eu magna sit amet ligula consectetur gravida nec nec enim.
-          Nullam euismod fermentum metus elementum placerat. Mauris elementum
-          convallis gravida.
+          A passionate, detail oriented full stack web developer who began his
+          journey tinkering with MS-DOS commands on his first computer, to
+          Thomas' Myspace Editor and ultimately graduating one of America's top
+          coding schools with really good grades. I am proficient and well
+          versed in many aspects of web development, from HTML, CSS and even
+          javascript. Feel free to browse through the many projects below to see
+          for yourself! I look forward to working with you!
         </p>
       </div>
     </section>
