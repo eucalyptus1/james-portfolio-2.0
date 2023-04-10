@@ -7,6 +7,12 @@ import Portfolio from "./Portfolio";
 import Contact from "./Contact.js";
 // import Resume from './components/resume.js';
 
+const styles = {
+  content: {
+    minHeight: "calc(100vh - 120px)",
+  },
+};
+
 function Home() {
   const [pages] = useState([
     {
@@ -43,8 +49,7 @@ function Home() {
   return (
     <div>
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-      <main>{renderPage()}</main>
-
+      <main style={styles.content}>{renderPage()}</main>
       <Footer />
     </div>
   );

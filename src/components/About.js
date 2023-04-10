@@ -20,7 +20,7 @@ const styles = {
 
   aboutHeader: {
     fontSize: "30px",
-    borderBottom: "2px solid  rgb(57, 47, 199)",
+    // borderBottom: "2px solid  rgb(57, 47, 199)",
     width: "fit-content",
     margin: "50px 15px",
   },

@@ -7,6 +7,9 @@ const styles = {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "space-between",
+    height: "100px",
+    // marginTop: "0",
+    // marginBottom: "-10px",
     padding: "20px 35px",
   },
 };
