@@ -50,7 +50,7 @@ function Project() {
       id: 2,
       name: "Plant Measurer",
       image: plant,
-      link: "https://google.com/",
+      link: "https://eucalyptus1.github.io/dasher-weathboard/",
     },
     {
       id: 3,

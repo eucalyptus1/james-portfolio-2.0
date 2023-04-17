@@ -1,7 +1,7 @@
 {
   "name": "james-portfolio-2.0",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://eucalyptus1.github.io/james-portfolio-2.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
