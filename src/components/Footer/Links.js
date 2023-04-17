@@ -17,8 +17,12 @@ const styles = {
 function Links() {
   return (
     <ul style={styles.footerList}>
-      <li style={styles.footerLinks}>LinkedIN</li>
-      <li style={styles.footerLinks}>Github</li>
+      <li style={styles.footerLinks}>
+        <a href="www.linkedin.com/in/james-harrington-03a36160">LinkedIN</a>
+      </li>
+      <li style={styles.footerLinks}>
+        <a href="https://github.com/eucalyptus1">Github</a>
+      </li>
     </ul>
   );
 }
